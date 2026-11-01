@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "net.heartbeat.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "modmenu.GuiMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": []
+}

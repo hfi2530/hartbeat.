@@ -1,0 +1,10 @@
+{
+  "gui.heartbeat.title.updated": "Mod update...",
+  "gui.heartbeat.description.updated": "An Update for the Mod '%s' was downloaded and will be applied after restarting the Game!",
+
+  "gui.heartbeat.title.failure": "Mod update failed",
+  "gui.heartbeat.description.failure": "The Download for an update of '%s' failed!",
+
+  "gui.heartbeat.tooltip.update": "Update...",
+  "gui.heartbeat.tooltip.no_update_available": "No update available"
+}

@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "heartbeat",
+	"version": "${version}",
+	"name": "Heartbeat",
+	"description": "Adds Auto Updates for Mods hosted on Modrinth!",
+	"authors": [
+		"1TheCrazy"
+	],
+	"contact": {
+		"homepage": "https://heartbeatmc.net/",
+		"sources": "https://github.com/1TheCrazy/HeartbeatMC"
+	},
+	"license": "MIT",
+	"icon": "assets/heartbeat/icon.png",
+	"environment": "client",
+	"custom": {
+		"modmenu": {
+			"links" : {
+				"modmenu.kofi" : "https://ko-fi.com/1thecrazy"
+			},
+			"update_checker": true
+		}
+	},
+	"entrypoints": {
+		"main": [
+			"net.heartbeat.Heartbeat"
+		],
+		"client": [
+			"net.heartbeat.HeartbeatClient"
+		]
+	},
+	"mixins": [
+		"heartbeat.mixins.json",
+		{
+			"config": "heartbeat.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21",
+		"java": ">=19",
+		"fabric-api": "*",
+		"modmenu": "*"
+	}
+}
